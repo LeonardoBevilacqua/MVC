@@ -1,0 +1,16 @@
+body{
+    > .header{
+        background-color: $header-color;
+        @include make-row;
+        @include make-md-column(6);
+        @include make-md-column-offset(3);
+        margin-top: 100px;        
+        height: 75px;
+        border-radius: 12px 12px 0 0;
+        border: 5px double #B2BBD1;
+        border-bottom: 0;
+        > .header-content{
+            color: #000;
+        }
+    }
+}

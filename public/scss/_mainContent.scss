@@ -1,0 +1,20 @@
+body{
+    > .main-content{
+        background-color: $mainContent-color;
+        @include make-row;
+        @include make-md-column(6);
+        @include make-md-column-offset(3);
+        padding: 15px;        
+        border: 5px double #B2BBD1;
+        border-bottom: 0;
+        border-top: 0;
+        > .panel{
+            
+            margin: 0;
+            h1,p{
+                margin: 0;
+            }
+        }        
+    }
+}
+
