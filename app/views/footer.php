@@ -1,7 +1,7 @@
             </div>
         <div class="footer">
             <div class="footer-content">
-                <h6>Footer</h6>
+                <h4>Leonardo Bevilacqua 2016 &copy; - Todos os direitos reservados</h4>
             </div>            
         </div>    
     </body>
