@@ -3,7 +3,7 @@ RewriteEngine On
 
 RewriteBase /MVC
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteCond %{REQUEST_URI} !-f
 
-RewriteRule ^(.+)$ index.php [QSA,L]
+RewriteRule ^(.+)$ index.php [L]

@@ -11,7 +11,7 @@ class Routes {
         $url = $this->parseUrl();
         
         if(isset($url[0])){
-            if(file_exists('app/controllers/' . $url[0] . '.php'))
+            if(file_exists('app/controllers/' . $url[0] . 'Controller.php'))
             {
                 $this->controller = $url[0];
                 unset($url[0]);
@@ -55,7 +55,7 @@ class Routes {
     private function _loadController($controller)
     {
         $this->controller = $controller;
-        require_once 'app/controllers/' . $this->controller . '.php';
+        require_once 'app/controllers/' . $this->controller . 'Controller.php';
         $this->controller = new $this->controller;
     }
     
