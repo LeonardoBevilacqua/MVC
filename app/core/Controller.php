@@ -1,5 +1,4 @@
 <?php
-
 class Controller
 {
     protected $header = '_layout/header';
