@@ -9,7 +9,7 @@
     <body>
         <div class="header">
             <div class="header-content">
-                <h1>VS php - MVC</h1>
+                <h1>VS PHP - MVC</h1>
             </div>
         </div>
         <div class="main-content">

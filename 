@@ -1,0 +1,53 @@
+[33mcommit bf6ada9d4ffe3c0bfd81462deb130efe8c787b83[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Sat Dec 24 20:11:22 2016 -0200
+
+    Refatoracao da classe Controller, criacao da classe view
+
+[33mcommit a450acfa74970fd64f7d7a5fb458479a852d605b[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Sat Dec 24 20:01:48 2016 -0200
+
+    Refatoracao da classe app, criacao da classe routes
+
+[33mcommit 667775b331352b3a7658ee8008de3667f66bccd2[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Sat Dec 24 19:29:39 2016 -0200
+
+    Alteracao da forma que captura a uri
+
+[33mcommit dee8694c74f02d76ba9edb2dd8bad8dfb2b53012[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Sat Dec 24 19:20:41 2016 -0200
+
+    Alteracao da forma que captura a uri
+
+[33mcommit df5e97a0fb1c392ff186212fe0db27f0c5797c32[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Fri Dec 23 23:29:54 2016 -0200
+
+    ajustes
+
+[33mcommit 5d353a44f3c09ff6ee88e30d75f1defb9208c009[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Fri Dec 23 23:00:07 2016 -0200
+
+    Ajuste no sistema de layouts
+
+[33mcommit 74ee90b209487295bd254c06fbcc0bb2df30b890[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Fri Dec 23 17:35:18 2016 -0200
+
+    Ajustes no header e footer
+
+[33mcommit 8f59d7c4261f35a06342a23a4b24dce8d14280fd[m
+Author: Leonardo Bevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Fri Dec 23 15:18:58 2016 -0200
+
+    first commit
+
+[33mcommit 26980af3568303403924ae50401ad65c9fd4b9ae[m
+Author: LeonardoBevilacqua <leonardo_bevilacqua@hotmail.com>
+Date:   Fri Dec 23 15:06:42 2016 -0200
+
+    Initial commit
