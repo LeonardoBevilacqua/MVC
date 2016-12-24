@@ -12,6 +12,7 @@ class App
     public function __construct() 
     {
         $url = $this->parseUrl();
+        print_r($url);
         
         if(isset($url[0])){
             if(file_exists('app/controllers/' . $url[0] . '.php'))
@@ -45,10 +46,14 @@ class App
         
     }
     
-    protected function parseUrl()
+    private function parseUrl()
     {
-        if(isset($_GET['url'])){
-            return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
+        if(isset($_SERVER['REQUEST_URI']))
+        {
+            $path = rtrim(trim($_SERVER['REQUEST_URI'],'/'), '/');
+            $url = explode('/', filter_var($path, FILTER_SANITIZE_URL));
+            array_shift($url);
+            return $url;
         }
     }
     
