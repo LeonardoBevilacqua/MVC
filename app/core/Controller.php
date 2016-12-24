@@ -5,11 +5,19 @@ class Controller
     protected $header = '_layout/header';
     protected $footer = '_layout/footer';
 
+    /**
+     * Set the location of the header.
+     * @param $header type string The location of the header.
+     */
     function setHeader($header) 
     {
         $this->header = $header;
     }
-
+    
+    /**
+     * Set the location of the footer.
+     * @param $footer type string The location of the footer.
+     */
     function setFooter($footer) 
     {
         $this->footer = $footer;

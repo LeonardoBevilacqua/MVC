@@ -6,8 +6,8 @@ class Home extends Controller
     {
         $user = $this->model('User');
         $user->name = $name;
-        $this->setHeader('_custom/header');
-        $this->setFooter('_custom/footer');
+        //$this->setHeader('_custom/header');
+        //$this->setFooter('_custom/footer');
         $this->view('home/index', ['name' => $user->name,'title' => 'Index']);
     }
 }
