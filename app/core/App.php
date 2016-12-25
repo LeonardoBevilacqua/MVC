@@ -5,8 +5,4 @@ class App
     {
         $route = new Routes;
     }
-    
-    
-    
-    
 }

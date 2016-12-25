@@ -1,0 +1,12 @@
+{
+    "name": "MVC",
+    "require": {
+        "php-activerecord/php-activerecord": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Leonardo Bevilacqua",
+            "email": "leonardo_bevilacqua@hotmail.com"
+        }
+    ]
+}
