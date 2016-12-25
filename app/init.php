@@ -10,3 +10,13 @@ if (version_compare(PHP_VERSION, '5.4.0', '<'))
 
 require_once $composer_autoload;
 
+
+
+ActiveRecord\Config::initialize(function ($config)
+{
+   $config->set_model_directory('app/models');
+   $config->set_connections([
+        'development' => DB_TYPE.'://'.DB_USERNAME.':'.DB_PASSWORD.'@'.DB_HOST.'/'.DB_NAME
+    ]); 
+});
+

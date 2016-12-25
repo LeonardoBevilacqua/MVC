@@ -14,8 +14,8 @@ define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/MVC/');
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mvc');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 
 // The sitewide hashkey, do not change this because its used for passwords!
 // This is for other hash keys... Not sure yet
@@ -29,3 +29,4 @@ require_once 'app/init.php';
 use MVC\System\Core\App as App;
 
 $app = new App;
+

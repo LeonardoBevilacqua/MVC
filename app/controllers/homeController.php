@@ -10,4 +10,10 @@ class Home extends MVC\System\Core\Controller
         //$this->view->setFooter('_custom/footer');
         $this->view->render('home/index', ['name' => $user->name,'title' => 'Index']);
     }
+    
+    public function test($id){
+        $user = $this->model('Users');
+        $myUser = $user->findById($id);
+        $this->view->render('home/test', ['user' => $myUser,'title' => 'test']);
+    }
 }
