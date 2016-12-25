@@ -1,12 +1,12 @@
 <?php
 
-function __autoload($class_name)
-{
-    $core_path = ROOT.DS.'app'.DS.'core'.DS.strtolower($class_name).'.php';
-    
-    if(file_exists($core_path))
-    {
-        require_once ($core_path);
-    }
-}
+$composer_autoload = __DIR__.'/../vendor/autoload.php';
+
+if ( ! file_exists($composer_autoload))
+       die('Execute o comando: composer install');
+
+if (version_compare(PHP_VERSION, '5.4.0', '<'))
+       die('Atualize seu PHP para a vers&atilde;o: 5.4.0 ou superior.');
+
+require_once $composer_autoload;
 

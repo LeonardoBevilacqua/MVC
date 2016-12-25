@@ -1,6 +1,6 @@
 <?php
 
-class error404 extends Controller
+class error404 extends MVC\System\Core\Controller
 {
     public function index()
     {

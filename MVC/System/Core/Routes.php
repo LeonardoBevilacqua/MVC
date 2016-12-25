@@ -1,4 +1,4 @@
-<?php
+<?php namespace MVC\System\Core;
 class Routes {
     
     protected $controller = 'home';

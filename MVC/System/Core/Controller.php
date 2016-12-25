@@ -1,4 +1,4 @@
-<?php
+<?php namespace MVC\System\Core;
 class Controller
 {
     function __construct() {

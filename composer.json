@@ -8,5 +8,11 @@
             "name": "Leonardo Bevilacqua",
             "email": "leonardo_bevilacqua@hotmail.com"
         }
-    ]
+    ],
+    
+    "autoload":{
+        "psr-4": {
+            "MVC\\": "MVC"
+        }
+    }
 }

@@ -1,4 +1,4 @@
-<?php
+<?php namespace MVC\System\Core;
 class View {
     protected $header = '_layout/header';
     protected $footer = '_layout/footer';

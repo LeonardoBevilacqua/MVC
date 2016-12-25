@@ -1,6 +1,6 @@
 <?php
 
-class Home extends Controller
+class Home extends MVC\System\Core\Controller
 {
     public function index($name = null)
     {
