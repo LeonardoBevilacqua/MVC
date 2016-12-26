@@ -3,7 +3,7 @@
                     <pre>
                         Name from DB:
                         <?php
-                            echo $data['user']->name;
+                            echo isset($data['user']->name) ? $data['user']->name : '';
                         ?>
                     </pre>
                 </div>

@@ -7,7 +7,13 @@ class Routes {
     
     protected  $params = [];
     
-    function __construct() {
+    function __construct() 
+    {
+        $this->loadPage();
+    }
+    
+    protected function loadPage() 
+    {
         $url = $this->parseUrl();
         
         if(isset($url[0])){

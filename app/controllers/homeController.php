@@ -14,6 +14,7 @@ class Home extends MVC\System\Core\Controller
     public function test($id){
         $user = $this->model('Users');
         $myUser = $user->findById($id);
+        
         $this->view->render('home/test', ['user' => $myUser,'title' => 'test']);
     }
 }
