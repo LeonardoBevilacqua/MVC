@@ -4,6 +4,11 @@ class Controller
     function __construct() {
         $this->view = new View();
     }
+    
+    protected function redirect($controller, $action, $param = [])
+    {
+        header('Location: ' . DIRECTORY . $controller . '/' . $action);
+    }
 
     /**
      * Load the object of the model.

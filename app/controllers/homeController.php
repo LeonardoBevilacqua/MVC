@@ -4,6 +4,9 @@ class Home extends MVC\System\Core\Controller
 {
     public function index($name = null)
     {
+        if($name == 'go'){
+            $this->redirect('home', 'teste');
+        }
         $user = $this->model('Users');
         $user->name = $name;
         //$this->view->setHeader('_custom/header');

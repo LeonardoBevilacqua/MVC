@@ -14,8 +14,8 @@
         </div>
         <div class="main-content">
             <div style="background-color: #fff">
-                <a href="/MVC/home/index">Index</a>
-                <a href="/MVC/home/test/1">test</a> 
+                <a href="<?=DIRECTORY.'home/index';?>">Index</a>
+                <a href="<?=DIRECTORY.'home/test/1';?>">test</a> 
             </div>
             
 
