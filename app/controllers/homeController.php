@@ -4,9 +4,6 @@ class Home extends MVC\System\Core\Controller
 {
     public function index($name = null)
     {
-        if($name == 'go'){
-            $this->redirect('home', 'teste');
-        }
         $user = $this->model('Users');
         $user->name = $name;
         //$this->view->setHeader('_custom/header');
@@ -16,8 +13,8 @@ class Home extends MVC\System\Core\Controller
     
     public function test($id){
         $user = $this->model('Users');
-        $myUser = $user->findById($id);
+        $data = $user->findById($id) ? $user->findById($id) : $this->redirect('Errors', 'dbError');
         
-        $this->view->render('home/test', ['user' => $myUser,'title' => 'test']);
+        $this->view->render('home/test', ['user' => $data,'title' => 'test']);
     }
 }

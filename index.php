@@ -3,6 +3,7 @@
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__));
 define('DIRECTORY', '/MVC/');
+define('TEMPLATES_PATH', ROOT_PATH . DS . 'templates' . DS);
 
 // Always provide a TRAILING SLASH (/) AFTER A PATH
 

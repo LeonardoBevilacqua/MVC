@@ -5,9 +5,9 @@ class Controller
         $this->view = new View();
     }
     
-    protected function redirect($controller, $action, $param = [])
+    protected function redirect($controller, $action, $param = null)
     {
-        header('Location: ' . DIRECTORY . $controller . '/' . $action);
+        header('Location: ' . DIRECTORY . $controller . '/' . $action . $param);
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php namespace MVC\System\Core;
 class Routes {
     
-    protected $controller = 'home';
+    protected $controller = 'Home';
     
-    protected $method = 'index';
+    protected $method = 'Index';
     
     protected  $params = [];
     
@@ -24,7 +24,7 @@ class Routes {
             } 
             else 
             {
-                $this->controller = 'error404';
+                $this->controller = 'errors';
                 unset($url[0]);
             }
         }
@@ -40,7 +40,8 @@ class Routes {
             }
             else 
            {
-                $this->_loadController('error404');
+                $this->_loadController('errors');
+                $this->method = 'error404';
            }
         }
         
