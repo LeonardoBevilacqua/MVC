@@ -25,6 +25,7 @@ class Routes {
             else 
             {
                 $this->controller = 'errors';
+                $this->method = 'error404';
                 unset($url[0]);
             }
         }
