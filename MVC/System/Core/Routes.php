@@ -1,9 +1,9 @@
 <?php namespace MVC\System\Core;
 class Routes {
     
-    protected $controller = 'Home';
+    protected $controller = 'home';
     
-    protected $method = 'Index';
+    protected $method = 'index';
     
     protected  $params = [];
     
