@@ -2,15 +2,22 @@ body{
     > .header{
         background-color: $header-color;
         @include make-row;
-        @include make-md-column(6);
-        @include make-md-column-offset(3);
-        margin-top: 100px;        
-        height: 75px;
+        @include make-md-column(10);
+        @include make-md-column-offset(1);
+        margin-top: 100px;      
+        height: 125px;
         border-radius: 12px 12px 0 0;
-        border: 5px double #B2BBD1;
+        border: 5px $border-style $border-color;
         border-bottom: 0;
         > .header-content{
-            color: #000;
+            padding: 15px 0;
+            > h1{
+                color: #000;
+                font-size: 50px;
+                font-family: sans;
+                margin: 0;
+            }
+            
         }
     }
 }

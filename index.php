@@ -1,4 +1,5 @@
 <?php
+define('VERSION', '1.0.0');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__));
@@ -17,7 +18,7 @@ define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mvc');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Leozinho580');
 
 // The sitewide hashkey, do not change this because its used for passwords!
 // This is for other hash keys... Not sure yet
