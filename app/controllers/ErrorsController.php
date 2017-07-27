@@ -2,13 +2,15 @@
 
 class Errors extends MVC\System\Core\Controller
 {
-    public function error404()
-    {
-        $this->view->render('errors/Error404', ['title' => 'Error 404']);
-    }
+      public function error404()
+      {
+            $this->getView()->setTitle("Error 404");
+            $this->getView()->render('Error404');
+      }
 
-    public function error500()
-    {
-        $this->view->render('errors/Error500', ['title' => 'Error 500']);
-    }
+      public function error500()
+      {
+            $this->getView()->setTitle("Error 500");
+            $this->getView()->render('Error500');
+      }
 }

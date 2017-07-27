@@ -1,14 +1,14 @@
 <?php
 
-function load_System_Core($className)
+function loadSystemClasses($classPath)
 {
-      $className = str_replace("\\","/",$className);
-      if(file_exists($className.".php"))
+      $classPath = str_replace("\\","/",$classPath);
+      if(file_exists($classPath.".php"))
       {
-            include($className . ".php");
+            include($classPath . ".php");
       }
       else{
-            throw new Exception("Class not found!", 1);
+            trigger_error("Class not found!: " . $classPath, E_USER_ERROR);
       }
 }
-spl_autoload_register("load_System_Core");
+spl_autoload_register("loadSystemClasses");

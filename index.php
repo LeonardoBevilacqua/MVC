@@ -3,7 +3,7 @@ define('VERSION', '1.0.0');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__));
-define('DIRECTORY', '/MVC/');
+define('DIRECTORY', '/MVC');
 define('TEMPLATES_PATH', ROOT . DS . 'templates' . DS);
 
 // Always provide a TRAILING SLASH (/) AFTER A PATH
@@ -11,7 +11,7 @@ define('TEMPLATES_PATH', ROOT . DS . 'templates' . DS);
 /**
  * Url = http:// + your host + /folder
  */
-define('URL', 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY);
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY . '/');
 //define('LIBS', 'libs/');
 
 define('DB_TYPE', 'mysql');

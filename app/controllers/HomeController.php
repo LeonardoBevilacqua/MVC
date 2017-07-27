@@ -2,8 +2,9 @@
 
 class Home extends MVC\System\Core\Controller
 {
-    public function index()
-    {
-        $this->view->render('home/index', ['title' => 'Index']);
-    }
+      public function index()
+      {
+            $this->getView()->setTitle("Index");
+            $this->getView()->render('Index');
+      }
 }

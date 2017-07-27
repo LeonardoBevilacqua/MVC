@@ -25,7 +25,10 @@ class Routes {
             {
                   $path = rtrim(trim($_SERVER['REQUEST_URI'],'/'), '/');
                   $this->url = explode('/', filter_var($path, FILTER_SANITIZE_URL));
-                  array_shift($this->url);
+
+                  if ($this->url[0] == trim(DIRECTORY,'/')) {
+                        array_shift($this->url);
+                  }
                   return;
             }
             $this->url = null;
@@ -71,6 +74,7 @@ class Routes {
 
       private function _loadError404(){
             $this->url = null;
+            unset($this->controller);
             $this->controller = "Errors";
             $this->method = 'error404';
             $this->_loadController();
