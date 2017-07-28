@@ -27,7 +27,7 @@ class Controller
             return $this->response->redirectTo($url);
       }
 
-      protected function post($name = null)
+      public function post($name = null)
       {
             return $this->request->post($name);
       }

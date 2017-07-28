@@ -83,6 +83,10 @@ class View {
             $this->header = $header;
       }
 
+      function setData($data){
+            $this->data = $data;    
+      }
+
       /**
       * Set the location of the footer.
       * @param $footer type string The location of the footer.

@@ -68,6 +68,8 @@ class Routes {
                   }
             }
             $this->params = $this->url ? array_values($this->url) : [];
+            $this->_loadPost();
+            #var_dump($this->params);
             call_user_func_array([$this->controller, $this->method], $this->params);
             return true;
       }
@@ -79,5 +81,12 @@ class Routes {
             $this->method = 'error404';
             $this->_loadController();
             $this->_loadAction();
+      }
+
+      private function _loadPost()
+      {
+            $post = [$this->controller->post()];
+            //var_dump($post);
+            $this->params = $post != null ? $post : [];
       }
 }
