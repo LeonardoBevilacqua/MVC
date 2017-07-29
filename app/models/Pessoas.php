@@ -19,7 +19,6 @@ class Pessoas
                   'endereco' => $row->endereco
                   ]);
             }
-            #var_dump($this->PessoasDados);die;
             return $this->PessoasDados;
       }
 
@@ -39,10 +38,27 @@ class Pessoas
                   $stmt->bindParam(1,$pessoa["id"]);
                   $stmt->bindParam(2,$pessoa["nome"]);
                   $stmt->bindParam(3,$pessoa["endereco"]);
-                  $stmt->execute();
+                  if($stmt->execute()){
+                        #die("true");
+                  }else {
+                        die("false");
+                  }
 
             } catch (Exception $e) {
-                  die();
+                  die("Error");
+            }
+
+      }
+
+      public function deletePessoa($id)
+      {
+            try {
+                  $con = new PDO("mysql:host=localhost;dbname=mvcTest", "root", "Leozinho580");
+                  $stmt = $con->prepare("DELETE FROM Pessoas WHERE id = ?");
+                  $stmt->bindParam(1,$id);
+                  $stmt->execute();
+            } catch (Exception $e) {
+                  die("Error");
             }
 
       }

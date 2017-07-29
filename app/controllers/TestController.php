@@ -13,10 +13,18 @@ class Test extends MVC\System\Core\Controller
       }
 
       public function EnviarPessoa($pessoa)
-      {            
+      {
+            #var_dump($pessoa);die;
             $pessoas = $this->model("Pessoas");
             $pessoas->addPessoa($pessoa);
 
+            $this->redirectTo("Test/index");
+      }
+
+      public function delete($id)
+      {
+            $pessoas = $this->model("Pessoas");
+            $pessoas->deletePessoa($id);
             $this->redirectTo("Test/index");
       }
 }

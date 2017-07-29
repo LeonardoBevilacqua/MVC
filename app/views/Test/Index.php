@@ -1,3 +1,4 @@
+<!--h2></h2-->
 <table>
       <thead>
             <tr>
@@ -11,10 +12,13 @@
             <?php
             foreach ($this->data as $key => $value) {
                   echo "<tr>";
-                  echo "<td>" . $value["id"] . "</td>";
-                  echo "<td>" . $value["nome"] . "</td>";
-                  echo "<td>" . $value["endereco"] . "</td>";
-                  echo "<td>"."</td>";
+                        echo "<td>" . $value["id"] . "</td>";
+                        echo "<td>" . $value["nome"] . "</td>";
+                        echo "<td>" . $value["endereco"] . "</td>";
+                        echo "<td>" .
+                              "<a href='" . DIRECTORY . "test/delete/". $value["id"] . "'> delete </a>" .
+                              "<a href='" . DIRECTORY . "test/modif/" . $value["id"] . "'> modificar </a>"
+                        . "</td>";
                   echo "</tr>";
             }
             ?>

@@ -67,9 +67,10 @@ class Routes {
                         return false;
                   }
             }
+
             $this->params = $this->url ? array_values($this->url) : [];
             $this->_loadPost();
-            #var_dump($this->params);
+            #var_dump($this->params);die();
             call_user_func_array([$this->controller, $this->method], $this->params);
             return true;
       }
@@ -85,8 +86,14 @@ class Routes {
 
       private function _loadPost()
       {
-            $post = [$this->controller->post()];
-            //var_dump($post);
-            $this->params = $post != null ? $post : [];
+            $post = $this->controller->post() ? [$this->controller->post()] : null;
+            if ($post != null) {
+                  if (sizeof($this->params) > 0) {
+                        array_push($this->params, $post);
+                  }else {
+                        $this->params = $post;
+                        #var_dump($post);die();
+                  }
+            }
       }
 }
