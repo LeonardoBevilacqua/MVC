@@ -10,7 +10,8 @@ class Pessoas
       private $PessoasDados = [];
 
       public function getPessoas(){
-            $con = new PDO("mysql:host=localhost;dbname=mvcTest", "root", "Leozinho580");
+            //$con = new PDO("mysql:host=localhost;dbname=mvcTest", "root", "Leozinho580");
+            $con = new PDO(DB_TYPE . ":host=" . DB_HOST . ";dbname=" . DB_NAME . "", DB_USER, DB_PASS);
             $stmt = $con->query("SELECT * FROM Pessoas");
             while($row = $stmt->fetch(PDO::FETCH_OBJ)){
                   array_push($this->PessoasDados,

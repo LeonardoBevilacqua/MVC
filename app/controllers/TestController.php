@@ -3,7 +3,7 @@
 class Test extends MVC\System\Core\Controller
 {
       public function index()
-      {
+      {            
             $pessoas = $this->model("Pessoas");
 
             $this->getView()->setData($pessoas->getPessoas());
@@ -14,7 +14,7 @@ class Test extends MVC\System\Core\Controller
 
       public function EnviarPessoa($pessoa)
       {
-            #var_dump($pessoa);die;
+            var_dump($_POST);die;
             $pessoas = $this->model("Pessoas");
             $pessoas->addPessoa($pessoa);
 

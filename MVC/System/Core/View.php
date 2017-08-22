@@ -83,8 +83,20 @@ class View {
             $this->header = $header;
       }
 
+      /**
+      * Set a array of data to be displayed in the view.
+      * @param $data type array The data that will be show in the view.
+      */
       function setData($data){
-            $this->data = $data;    
+            $this->data = $data;
+      }
+
+      /**
+      * Add a array of data to be displayed in the view.
+      * @param $data type array The data that will be show in the view.
+      */
+      function joinData($data){
+            $this->data += $data;
       }
 
       /**
