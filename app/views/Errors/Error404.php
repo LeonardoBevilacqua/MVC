@@ -1,8 +1,6 @@
-            <div class="panel panel-danger">
-                <div class="panel-heading"><h1>Ops!!!</h1></div>
-                <div class="panel-body">
-                    <p>
-                        A página solicitada não existe!
-                    </p>
-                </div>
-            </div>
+<div class="info info-error">
+      <h2>Ops!!!</h2>
+      <p>
+            A página solicitada não existe!
+      </p>
+</div>
