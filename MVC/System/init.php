@@ -21,7 +21,7 @@ define('ROOT', dirname(__FILE__));
  {
        public static function setDirectories($rootDirectory, $cssDirectory, $scriptsDirectory, $imgsDirectory)
        {
-             define('DIRECTORY', '/' . $rootDirectory);
+             define('DIRECTORY', $rootDirectory);
              define('URL', 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY);
              define('CSS_PATH', DIRECTORY . $cssDirectory);
              define('SCRIPTS_PATH', DIRECTORY . $scriptsDirectory);
