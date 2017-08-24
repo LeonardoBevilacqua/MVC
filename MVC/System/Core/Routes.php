@@ -38,6 +38,10 @@ class Routes {
       {
             if(isset($this->url[0])){
 
+                  if ($this->url[0] == "Errors") {
+                        return false;
+                  }
+
                   if(file_exists('app/controllers/' . ucfirst($this->url[0]) . 'Controller.php'))
                   {
                         $this->controller = $this->url[0];
@@ -70,7 +74,6 @@ class Routes {
 
             $this->params = $this->url ? array_values($this->url) : [];
             $this->_loadPost();
-            #var_dump($this->params);die();
             call_user_func_array([$this->controller, $this->method], $this->params);
             return true;
       }
@@ -92,7 +95,6 @@ class Routes {
                         array_push($this->params, $post);
                   }else {
                         $this->params = $post;
-                        #var_dump($post);die();
                   }
             }
       }

@@ -10,7 +10,7 @@
 <body>
       <div class="grid-cotainer">
             <div class="grid-row">
-                  <div class="grid-offset-3 grid-col-6">
+                  <div class="grid-offset-2 grid-col-8">
                         <div class="panel">
                               <div class="panel-header">
                                     <img src="<?=DIRECTORY?>public/favicon.png" id="logo" alt="LB" height="80">

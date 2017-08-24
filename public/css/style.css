@@ -1,3 +1,7 @@
+body{
+      background: #eee;
+}
+
 img#logo, h1#titulo{
       vertical-align: middle;
 }
