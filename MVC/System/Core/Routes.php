@@ -82,7 +82,13 @@ class Routes {
             $this->url = null;
             unset($this->controller);
             $this->controller = "Errors";
-            $this->method = 'error404';
+            $this->method = 'error404s';
+
+            if(!file_exists('app/controllers/' . $this->controller . 'Controller.php'))
+            {
+                  http_response_code(404);
+                  die();
+            }
             $this->_loadController();
             $this->_loadAction();
       }
