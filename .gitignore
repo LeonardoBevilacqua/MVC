@@ -3,5 +3,5 @@
 composer.lock
 /nbproject
 /app/views/Test
-/app/views/models/Pessoas.php
+/app/models/Pessoas.php
 /app/controllers/TestController.php
