@@ -1,0 +1,7 @@
+img#logo, h1#titulo{
+      vertical-align: middle;
+}
+
+h1#titulo{
+      display: inline;
+}
